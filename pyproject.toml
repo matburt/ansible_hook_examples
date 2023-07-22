@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+  "setuptools>=45.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ansible_hook_examples"
+version = "0.0.1"
+
+[project.entry-points.ansible]
+ansible_hook_examples = "ansible_hook_examples.hooks"
+ansible_hook_debug = "ansible_hook_examples.debug"
